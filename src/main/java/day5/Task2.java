@@ -9,6 +9,5 @@ public class Task2 {
         motobike.model = "Bugatti";
         System.out.println(motobike.getColor() + " " + motobike.getModel() + " " + motobike.getYear());
         motobike.checkout();
-
     }
 }
