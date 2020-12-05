@@ -22,13 +22,13 @@ public class Task1 {
         for (int value : array) {
             if (value > 8) {
                 countNumber8++;
-            }
+            } else
             if (value == 1) {
                 countNumber1++;
-            }
+            } else
             if (value % 2 == 0) {
                 countEvenNumber++;
-            }
+            } else
             if (value % 2 != 0) {
                 countOddNumber++;
             }
