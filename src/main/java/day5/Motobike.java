@@ -1,9 +1,9 @@
 package day5;
 
 public class Motobike {
-    private int year;
-    private String model;
-    private String color;
+     int year;
+     String model;
+     String color;
 
     public void setYear(int year) {
         this.year = year;
