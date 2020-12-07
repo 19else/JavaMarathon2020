@@ -9,5 +9,4 @@ public class Task3 {
         student.setName("Смирнов");
         teacher.evaluate(student);
     }
-
 }
