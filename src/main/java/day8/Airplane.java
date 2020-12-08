@@ -1,6 +1,5 @@
 package day8;
-
-public class Airplane {
+class Airplane {
     private String producer;
     private int year;
     private double length;
@@ -48,6 +47,7 @@ public class Airplane {
         return year;
     }
 
+    @Override
     public String toString() {
         return "Изготовитель: " + producer + " Год выпуска: " + year +
                 " Длина: " + length + " Вес: " + weight;    }
