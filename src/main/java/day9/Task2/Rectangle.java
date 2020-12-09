@@ -4,10 +4,6 @@ public class Rectangle extends Figure {
     double a;
     double b;
 
-    public Rectangle(String color) {
-        super(color);
-    }
-
     public Rectangle (double a, double b, String color) {
         super(color);
         this.a = a;

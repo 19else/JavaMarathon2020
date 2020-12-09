@@ -5,7 +5,7 @@ public class TestFigures {
     public static double calculateRedPerimeter(Figure[] figure) {
         double rsl = 0;
         for (int i = 0; i < figure.length; i++) {
-            if (figure[i].color.equals("Red")) {
+            if (figure[i].getColor().equals("Red")) {
                 rsl += figure[i].perimeter();
             }
         }
@@ -15,7 +15,7 @@ public class TestFigures {
     public static double calculateRedArea(Figure[] figure) {
         double rsl = 0;
         for (Figure value : figure) {
-            if (value.color.equals("Red")) {
+            if (value.getColor().equals("Red")) {
                 rsl += value.area();
             }
         }

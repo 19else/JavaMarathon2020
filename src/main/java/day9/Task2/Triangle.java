@@ -5,10 +5,6 @@ public class Triangle extends Figure {
     double b;
     double c;
 
-    public Triangle(String color) {
-        super(color);
-    }
-
     Triangle (double a, double b, double c, String color) {
         super(color);
         this.a = a;
