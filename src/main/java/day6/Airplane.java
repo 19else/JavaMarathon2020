@@ -21,7 +21,7 @@ public class Airplane {
     }
 
     public int fillUp(int refuel) {
-        return this.fuel = refuel;
+        return this.fuel += refuel;
     }
 
     public void setLength(double length) {
