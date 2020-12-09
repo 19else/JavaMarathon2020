@@ -21,15 +21,14 @@ public class Airplane {
     }
 
     public static void compareAirplane(Airplane airplane1, Airplane airplane2) {
+        if (airplane1.length == airplane2.length) {
+            System.out.println(airplane1.producer + " и " + airplane2.producer + " равной длины");
+        } else
         if (airplane1.length > airplane2.length) {
             System.out.println(airplane1.producer + " is longer");
         } else {
             System.out.println(airplane2.producer + " is longer");
         }
-    }
-
-    public int fillUp(int refuel) {
-        return this.fuel = refuel;
     }
 
     public void setLength(double length) {
