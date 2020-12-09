@@ -1,5 +1,6 @@
 package day7;
 
+
 public class Player {
     private int stamina;
     private static final int MAX_STAMINA = 100;

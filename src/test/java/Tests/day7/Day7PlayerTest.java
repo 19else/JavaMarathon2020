@@ -99,5 +99,4 @@ public void countWhenStamina0() {
         assertEquals(3, Player.getCountPlayers(), "Вызов метода run, 4 раза " +
         "на объекте класса Player (stamina = 1), при общем кол-ве игроков 4. Общее количество игроков стало");
         }
-
 }
