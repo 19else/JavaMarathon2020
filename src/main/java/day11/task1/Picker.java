@@ -3,12 +3,12 @@ package day11.task1;
 public class Picker implements Worker {
     private double salary;
     private double isPayed;
-
-    Warehouse wh = new Warehouse();
+    private Warehouse warehouse;
 
     public Picker(double isPayed, double salary, Warehouse warehouse) {
         this.isPayed = isPayed;
         this.salary = salary;
+        this.warehouse = warehouse;
     }
 
     public double getIsPayed() {
@@ -29,8 +29,7 @@ public class Picker implements Worker {
 
     @Override
     public void doWork() {
-
-        wh.setCountPickedOrders(wh.getCountPickedOrders() + 1);
+        warehouse.setCountPickedOrders(warehouse.getCountPickedOrders() + 1);
     }
 
     @Override
@@ -38,10 +37,10 @@ public class Picker implements Worker {
         if (isPayed != 0) {
             System.out.println("Бонус уже выплачен");
         }
-        if (wh.getCountPickedOrders() == 10000) {
+        if (warehouse.getCountPickedOrders() == 10000) {
             this.isPayed += 70000;
         }
-        if (wh.getCountPickedOrders() < 10000) {
+        if (warehouse.getCountPickedOrders() < 10000) {
             this.isPayed = 0;
             System.out.println("Бонус пока недоступен");
         }
