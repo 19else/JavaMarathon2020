@@ -15,13 +15,10 @@ public class Task1 {
         Warehouse wh1 = new Warehouse(0, 0);
         Picker pk = new Picker(false, 80, wh1);
         Courier courier = new Courier(false, 100, wh1);
-
         businessProcess(courier);
         businessProcess(pk);
-
         System.out.println(pk.toString());
         System.out.println(courier.toString());
-
         Warehouse wh2 = new Warehouse(0, 0);
         Picker pk2 = new Picker(false, 80, wh2);
         Courier courier1 = new Courier(false, 100,wh2);

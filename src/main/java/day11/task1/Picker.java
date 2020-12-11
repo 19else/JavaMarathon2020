@@ -11,14 +11,6 @@ public class Picker implements Worker {
         this.warehouse = warehouse;
     }
 
-    public boolean getIsPayed() {
-        return isPayed;
-    }
-
-    public double getSalary() {
-        return salary;
-    }
-
     @Override
     public String toString() {
         return "Picker{" +

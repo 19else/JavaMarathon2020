@@ -11,14 +11,6 @@ public class Courier implements Worker {
         this.warehouse = warehouse;
     }
 
-    public double getSalary() {
-        return salary;
-    }
-
-    public boolean getIsPayed() {
-        return isPayed;
-    }
-
     @Override
     public String toString() {
         return "Courier{" +

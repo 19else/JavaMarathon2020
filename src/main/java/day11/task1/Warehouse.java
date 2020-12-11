@@ -4,16 +4,9 @@ public class Warehouse {
     private int countPickedOrders;
     private int countDeliveredOrders;
 
-    public Warehouse() {
-
-    }
-
     public Warehouse(int countPickedOrders, int countDeliveredOrders) {
-
         this.countPickedOrders = countPickedOrders;
         this.countDeliveredOrders = countDeliveredOrders;
-
-
     }
 
     public void setCountDeliveredOrders(int countDeliveredOrders) {
