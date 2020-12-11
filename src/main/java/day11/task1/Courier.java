@@ -2,10 +2,10 @@ package day11.task1;
 
 public class Courier implements Worker {
     private double salary;
-    private double isPayed;
+    private boolean isPayed;
     private Warehouse warehouse;
 
-    public Courier(double isPayed, double salary, Warehouse warehouse) {
+    public Courier(boolean isPayed, double salary, Warehouse warehouse) {
         this.isPayed = isPayed;
         this.salary = salary;
         this.warehouse = warehouse;
@@ -15,7 +15,7 @@ public class Courier implements Worker {
         return salary;
     }
 
-    public double getIsPayed() {
+    public boolean getIsPayed() {
         return isPayed;
     }
 
@@ -29,21 +29,21 @@ public class Courier implements Worker {
 
     @Override
     public void doWork() {
-
         warehouse.setCountDeliveredOrders(warehouse.getCountDeliveredOrders() + 1);
-
     }
 
     @Override
     public void bonus() {
-        if (this.isPayed != 0) {
+        if (isPayed) {
             System.out.println("Бонус уже выплачен");
         }
 
         if (warehouse.getCountDeliveredOrders() == 10000) {
-            this.isPayed = 50000;
+            salary += 50000;
+            isPayed = true;
+            System.out.println("Бонус выплачен курьеру");
         } else if (warehouse.getCountDeliveredOrders() < 10000) {
-            this.isPayed = 0;
+            isPayed = false;
             System.out.println("Бонус пока недоступен");
         }
     }

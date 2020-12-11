@@ -13,8 +13,8 @@ public class Task1 {
 
     public static void main(String[] args) {
         Warehouse wh1 = new Warehouse(0, 0);
-        Picker pk = new Picker(0, 80, wh1);
-        Courier courier = new Courier(0, 100, wh1);
+        Picker pk = new Picker(false, 80, wh1);
+        Courier courier = new Courier(false, 100, wh1);
 
         businessProcess(courier);
         businessProcess(pk);
@@ -23,8 +23,9 @@ public class Task1 {
         System.out.println(courier.toString());
 
         Warehouse wh2 = new Warehouse(0, 0);
-        Picker pk2 = new Picker(0, 80, wh2);
-        Courier courier1 = new Courier(0, 100,wh2);
+        Picker pk2 = new Picker(false, 80, wh2);
+        Courier courier1 = new Courier(false, 100,wh2);
+        pk2.doWork();
         pk2.doWork();
         courier1.doWork();
         System.out.println("Picker second = " + pk2.toString());
