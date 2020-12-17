@@ -3,35 +3,36 @@ package day12.task5;
 import java.util.List;
 
 public class MusicArtist {
-    private List<String> name;
-    private List<Integer> age;
+    private String name;
+    private int age;
 
-    public MusicArtist (List<String> name, List<Integer> age) {
+    public MusicArtist(String name, int age) {
         this.name = name;
         this.age = age;
     }
 
-    public List<String> getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(List<String> name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public List<Integer> getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(List<Integer> age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
     @Override
     public String toString() {
         return "MusicArtist{" +
-                "name=" + name +
+                "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
     }
 }
+
