@@ -45,10 +45,6 @@ public class MusicBand {
         System.out.println("printMembers = " + bands);
     }
 
-    public void getMembers() {
-        System.out.println(bands);
-    }
-
     @Override
     public String toString() {
         return "MusicBand{" +
